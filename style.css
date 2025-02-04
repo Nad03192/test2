@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.logo img {
-    height: 40px; 
-    width: auto;  
-}
 body {
     font-family: Arial, sans-serif;
 }
@@ -22,10 +18,6 @@ body {
 }
 
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-}
 
 .nav-links {
     display: flex;
@@ -44,19 +36,29 @@ body {
     transition: 0.3s;
     padding: 8px 12px;
 }
-.logo a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: 0.3s;
-    padding: 8px 12px;
-}
+
 .logo a:hover {
     background-color: rgb(211, 129, 5);
     border-radius: 5px;
 }
-.logo{
-    display:flex;}
+.logo a {
+            display: flex;
+            align-items: center;  /* Center items vertically */
+            text-decoration: none;  /* Remove underline from the link */
+        }
+
+        .logo img {
+            height: 40px; 
+            width: auto;  
+            margin-right: 10px;  /* Space between the logo and the text */
+        }
+
+        .logo p {
+            font-size: 24px;
+            color: white;  /* Adjust text color if necessary */
+            margin: 0; 
+        }
+
 .nav-links li a:hover {
     background-color: rgb(211, 129, 5);
     border-radius: 5px;
