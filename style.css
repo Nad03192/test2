@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -11,17 +12,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:black;
+    background-color: black;
     padding: 15px 20px;
     color: white;
     position: relative;
 }
 
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+.logo p {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
 
 .nav-links {
     display: flex;
-
     list-style: none;
 }
 
@@ -37,36 +53,13 @@ body {
     padding: 8px 12px;
 }
 
-.logo a:hover {
-    background-color: rgb(211, 129, 5);
-    border-radius: 5px;
-}
-.logo a {
-            display: flex;
-            align-items: center;  /* Center items vertically */
-            text-decoration: none;  /* Remove underline from the link */
-        }
-
-        .logo img {
-            height: 40px; 
-            width: auto;  
-            margin-right: 10px;  /* Space between the logo and the text */
-        }
-
-        .logo p {
-            font-size: 24px;
-            color: white;  /* Adjust text color if necessary */
-            margin: 0; 
-        }
-
 .nav-links li a:hover {
     background-color: rgb(211, 129, 5);
     border-radius: 5px;
 }
 
-
 .nav-links .active {
-    background-color:  rgb(198, 119, 1);
+    background-color: rgb(198, 119, 1);
     border-radius: 5px;
 }
 
@@ -89,9 +82,8 @@ body {
     }
 
     .nav-links li {
-        margin: 10px ;
-       
-    padding: 5px;
+        margin: 10px;
+        padding: 5px;
     }
 
     .hamburger {
@@ -102,6 +94,7 @@ body {
         display: flex;
     }
 }
+
 footer {
     background-color: #333;
     color: white;
@@ -110,18 +103,4 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-.logo {
-    display: flex;
-    align-items: center;  
-}
-
-.logo img {
-    margin-right: 10px;  
-}
-
-.logo p {
-    font-size: 24px;  
-    margin: 0; 
 }
