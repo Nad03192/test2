@@ -55,7 +55,8 @@ body {
     background-color: rgb(211, 129, 5);
     border-radius: 5px;
 }
-
+.logo{
+    display:flex;}
 .nav-links li a:hover {
     background-color: rgb(211, 129, 5);
     border-radius: 5px;
