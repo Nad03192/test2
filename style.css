@@ -82,10 +82,6 @@
     font-family: 'PoppinsSemiBold', sans-serif;
 }
 
-
-
-
-
   
 .container {
     width: 100%;
@@ -110,30 +106,17 @@ body {
     position: relative;
 }
 
-.navbarMobile{
-    z-index: 10;
-    gap :100px;
-    padding: 20px;
-    display: none;
-  height: auto;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    margin: 0 auto;
-    color: white;
-    position: relative;
-}
 .logo a {
     display: flex;
+    flex-direction: row;
     align-items: center;
     text-decoration: none;
+    gap: 10px; 
 }
 
 .logo img {
     height: 40px;
     width: auto;
-    gap : 10px; 
 }
 
 .logo p {
@@ -141,6 +124,7 @@ body {
     color: white;
     margin: 0;
 }
+
 
 .nav-links {
     
@@ -172,38 +156,50 @@ body {
     border-radius: 5px;
 }
 
-.navbarMobile .hamburger {
-    display:  block;
-    font-size: 24px;
-    gap: 29px;
-    cursor: pointer;
-}
-.navbarMobile .nav-links {
-    margin-top: auto;
+
+/* Mobile Navigation (Hidden by default) */
+.topnav {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 77px;
-    left: 0;
-    width: 100%;
+    align-items: center;
     background-color: black;
+    padding: 10px 0;
+    width: 100%;
+}
+
+/* Mobile menu items */
+#myLinks {
+    display: none;
+    flex-direction: column;
     text-align: center;
-}
-.navbarMobile .nav-links{
     width: 100%;
-    background-color: black;
 }
 
-
-.navbarMobile .nav-links li {
-width: 100%;
-    margin: 20px;
-    padding: 5px;
+#myLinks a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    font-size: 17px;
+    display: block;
+    width: 100%; /* Ensure full width */
 }
 
+#myLinks a:hover {
+    background-color: rgb(211, 129, 5);
+    border-radius: 5px;
+}
 
+.topnav .icon {
+    background: black;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
 
-.navbarMobile .nav-links.active {
+.topnav.active #myLinks {
     display: flex;
 }
 
@@ -215,9 +211,10 @@ width: 100%;
         display: block;
     
     }
-    .navbarMobile{
-        display:flex;
+    .topnav{
+        display: flex;
     }
+    
     .navbar{
         display: none;
     }
@@ -337,10 +334,7 @@ width: 100%;
   
  
     header {
-        text-align: center;
-        gap:20px;
       
-      align-items: center;
         background-color: black;
         color: white;
     }
