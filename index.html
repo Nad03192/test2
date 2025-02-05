@@ -48,7 +48,29 @@
  
 </header>
 
-   <div class="container">
+
+<div class="banner">
+    <img src="wild2.jpg" alt="Banner Image">
+    <div class="banner-text">
+        <h1>Welcome to Our Website</h1>
+        <p>Experience the Majesty of Luxury</p>
+        <a href="#next-section" class="banner-btn">Get Started</a>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+   <div class="container" id="next-section">
 <div class="flex-section">
     <div class="image">
         <img src="lion2.jpg" alt="Close-up of a lion">
@@ -68,30 +90,41 @@
     </div>
 </div>
 </div>
-    <footer>
-        <div class="containerDefault">
-        <div class="footer">
-        <div class="row">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
-        <a href="#"><i class="fa fa-youtube"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        </div>
-        
-        <div class="row">
-        <ul>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Career</a></li>
-        </ul>
-        </div>
-        
-        
-        </div>
+  
+
+<footer>
+    <div class="footer">
+    <div class="row">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
     </div>
-        </footer>
+    
+    <div class="row">
+    <ul>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">Our Services</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms & Conditions</a></li>
+    <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    
+  
+    </div>
+    </footer>
 </body>
 
 </html>
+
+
+
+<script>
+    document.querySelector(".banner-btn").addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent instant jump
+        document.querySelector("#next-section").scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+</script>
