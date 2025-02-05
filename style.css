@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.containerDefault {
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 15px 20px;
+
     color: white;
     position: relative;
 }
@@ -83,7 +83,7 @@ body {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 90px;
+        top: 77px;
         left: 0;
         width: 100%;
         background-color: black;
@@ -161,19 +161,19 @@ body {
     }
    
 
-    .container {
+    .flex-section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1000px;
+      
         margin: 30px auto;
-        padding: 20px;
+       
         background: white;
      
     }
     
    
-    .reverse {
+    .flex-section {
         flex-direction: row-reverse;
     }
     
@@ -220,12 +220,12 @@ body {
     }
     
     @media (max-width: 768px) {
-        .container {
+        .flex-section {
             flex-direction: column;
             text-align: center;
         }
     
-        .reverse {
+        .flex-section {
             flex-direction: column;
         }
     
