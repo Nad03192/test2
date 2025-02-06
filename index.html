@@ -21,8 +21,9 @@
         </div>
         <ul class="nav-links">
             <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#contact-form" class="nav-link">Contact</a></li>
             <li><a href="#about-us" class="nav-link">About</a></li>
+            <li><a href="#contact-form" class="nav-link">Contact</a></li>
+           
         </ul>
         
     </nav>
@@ -39,8 +40,9 @@
     </div>
     <div id="myLinks">
         <a href="#home" class="nav-link">Home</a>
-        <a href="#contact-form" class="nav-link">Contact</a>
+       
         <a href="#about-us" class="nav-link">About</a>
+        <a href="#contact-form" class="nav-link">Contact</a>
     </div>
     
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -100,7 +102,7 @@
 
 
 
-<div style="background-color: black;">
+<div id="contact-us" style="background-color: black;">
 <div class="container" id="contact-form">
     <h1>Contact Us</h1>
    
@@ -150,7 +152,7 @@
 
 <footer>
     <div class="footer">
-    <div class="row">
+    <div class="row" id="icons-container">
     <a href="#"><i class="fa fa-facebook"></i></a>
     <a href="#"><i class="fa fa-instagram"></i></a>
     <a href="#"><i class="fa fa-youtube"></i></a>
@@ -178,7 +180,7 @@
 
 <script>
     document.querySelector(".banner-btn").addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent instant jump
+        e.preventDefault(); 
         document.querySelector("#about-us").scrollIntoView({
             behavior: "smooth"
         });
@@ -197,8 +199,8 @@
     <script>
         document.querySelectorAll(".nav-link").forEach(link => {
             link.addEventListener("click", function (e) {
-                e.preventDefault(); // Prevent default anchor behavior
-                const targetId = this.getAttribute("href"); // Get the section ID
+                e.preventDefault(); 
+                const targetId = this.getAttribute("href");
                 document.querySelector(targetId).scrollIntoView({
                     behavior: "smooth"
                 });
