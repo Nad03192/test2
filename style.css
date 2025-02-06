@@ -38,6 +38,8 @@
     background-image: url('wild2.jpg');
     margin-bottom: 5%;
     background-position: center;
+    
+    background-repeat: no-repeat;
 }
 @media screen  and (max-width: 768px){
     .banner{
