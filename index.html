@@ -20,9 +20,9 @@
             </a>
         </div>
         <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#contact-form" class="nav-link">Contact</a></li>
+            <li><a href="#about-us" class="nav-link">About</a></li>
         </ul>
         
     </nav>
@@ -38,10 +38,11 @@
         </a>
     </div>
     <div id="myLinks">
-       <a href="#home" class="active">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#contact-form" class="nav-link">Contact</a>
+        <a href="#about-us" class="nav-link">About</a>
     </div>
+    
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
@@ -52,13 +53,13 @@
 </header>
 
 
-<div class="banner">
+<div class="banner" id="home" >
    
 
     <div class="banner-text">
         <h1>Welcome to Our Website</h1>
         <p>Experience the Majesty of Luxury</p>
-        <a href="#next-section" class="banner-btn">Get Started</a>
+        <a href="about-us" class="banner-btn">Get Started</a>
   
 </div>
 </div>
@@ -74,7 +75,7 @@
 
 
 
-   <div class="container" id="next-section">
+   <div class="container" id="about-us">
 <div class="flex-section">
     <div class="image">
         <img src="lion2.jpg" alt="Close-up of a lion">
@@ -102,8 +103,8 @@
 <div style="background-color: black;">
 <div class="container" id="contact-form">
     <h1>Contact Us</h1>
-    <br>
-  <form action="/action_page.php">
+   
+  <form action="/action_page.php" id="form-content">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -153,8 +154,7 @@
     <a href="#"><i class="fa fa-facebook"></i></a>
     <a href="#"><i class="fa fa-instagram"></i></a>
     <a href="#"><i class="fa fa-youtube"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i>
-</a>
+ 
     </div>
     
     <div class="row">
@@ -179,7 +179,7 @@
 <script>
     document.querySelector(".banner-btn").addEventListener("click", function (e) {
         e.preventDefault(); // Prevent instant jump
-        document.querySelector("#next-section").scrollIntoView({
+        document.querySelector("#about-us").scrollIntoView({
             behavior: "smooth"
         });
     });
@@ -194,3 +194,15 @@
       }
     }
     </script>
+    <script>
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault(); // Prevent default anchor behavior
+                const targetId = this.getAttribute("href"); // Get the section ID
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+        </script>
+        
