@@ -5,206 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .topnav #myLinks {
+            display: none;
+        }
+
+        .topnav:hover #myLinks {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-
-   
 <header>
-<div class="container" id="webnav">
-    <nav class="navbar">
-       <div class="logo">
-            <a href="index.html">   <img src="OIP.jpg" alt="Logo">
-                <p>THE LION</p>
+    <div class="container" id="webnav">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="OIP.jpg" alt="Logo">
+                    <p>THE LION</p>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about-us" class="nav-link">About</a></li>
+                <li><a href="#contact-form" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="topnav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="OIP.jpg" alt="Logo">
+                    <p>THE LION</p>
+                </a>
+            </div>
+            <div id="myLinks">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about-us" class="nav-link">About</a>
+                <a href="#contact-form" class="nav-link">Contact</a>
+            </div>
+            <a href="#myLinks" class="icon">
+                <i class="fa fa-bars"></i>
             </a>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about-us" class="nav-link">About</a></li>
-            <li><a href="#contact-form" class="nav-link">Contact</a></li>
-           
-        </ul>
-        
-    </nav>
-  
-
-</div>
-
-<div class="topnav">
-    <div  class="container">
-         <div class="logo">
-        <a href="index.html">   <img src="OIP.jpg" alt="Logo">
-            <p>THE LION</p>
-        </a>
     </div>
-    <div id="myLinks">
-        <a href="#home" class="nav-link">Home</a>
-       
-        <a href="#about-us" class="nav-link">About</a>
-        <a href="#contact-form" class="nav-link">Contact</a>
-    </div>
-    
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-    
- 
 </header>
 
 
-<div class="banner" id="home" >
-   
 
+
+<div class="banner" id="home">
     <div class="banner-text">
         <h1>Welcome to Our Website</h1>
         <p>Experience the Majesty of Luxury</p>
-        <a href="about-us" class="banner-btn">Get Started</a>
-  
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-   <div class="container" id="about-us">
-<div class="flex-section">
-    <div class="image">
-        <img src="lion2.jpg" alt="Close-up of a lion">
-    </div>
-    <div class="content">
-        <h1>Life in the Pride</h1>
-        <p>
-            Lions are unique among big cats because they live in social groups called prides. A pride consists of
-            related lionesses, their cubs, and a few dominant males. The lionesses are the primary hunters, while
-            the males protect the territory.
-        </p>
-        <br>
-        <p>
-            Cubs are raised by the entire pride, learning to hunt and survive in the wild. As they grow, young males
-            eventually leave to form their own groups, continuing the cycle of life.
-        </p>
+        <a href="#about-us" class="banner-btn">Get Started</a>
     </div>
 </div>
+
+
+
+
+<div class="container" id="about-us">
+    <div class="flex-section">
+        <div class="image">
+            <img src="lion2.jpg" alt="Close-up of a lion">
+        </div>
+        <div class="content">
+            <h1>Life in the Pride</h1>
+            <p>
+                Lions are unique among big cats because they live in social groups called prides. A pride consists of
+                related lionesses, their cubs, and a few dominant males. The lionesses are the primary hunters, while
+                the males protect the territory.
+            </p>
+            <br>
+            <p>
+                Cubs are raised by the entire pride, learning to hunt and survive in the wild. As they grow, young males
+                eventually leave to form their own groups, continuing the cycle of life.
+            </p>
+        </div>
+    </div>
 </div>
-  
-
-
-
 
 <div id="contact-us" style="background-color: black;">
-<div class="container" id="contact-form">
-    <h1>Contact Us</h1>
-   
-  <form action="/action_page.php" id="form-content">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-<div class="button-container">
-    <input type="submit" value="Submit">
+    <div class="container" id="contact-form">
+        <h1>Contact Us</h1>
+        <form action="/action_page.php" id="form-content">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <div class="button-container">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
     </div>
-  </form>
 </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <footer>
     <div class="footer">
-    <div class="row" id="icons-container">
-    <a href="#"><i class="fa fa-facebook"></i></a>
-    <a href="#"><i class="fa fa-instagram"></i></a>
-    <a href="#"><i class="fa fa-youtube"></i></a>
- 
+        <div class="row" id="icons-container">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="row">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Career</a></li>
+            </ul>
+        </div>
     </div>
-    
-    <div class="row">
-    <ul>
-    <li><a href="#">Contact us</a></li>
-    <li><a href="#">Our Services</a></li>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms & Conditions</a></li>
-    <li><a href="#">Career</a></li>
-    </ul>
-    </div>
-    
-  
-    </div>
-    </footer>
+</footer>
 </body>
-
 </html>
 
 
-
 <script>
-    document.querySelector(".banner-btn").addEventListener("click", function (e) {
-        e.preventDefault(); 
-        document.querySelector("#about-us").scrollIntoView({
-            behavior: "smooth"
-        });
+    document.getElementById("form-content").addEventListener("submit", function (event) {
+        let isValid = true;
+
+        let firstName = document.getElementById("fname").value.trim();
+        let lastName = document.getElementById("lname").value.trim();
+        let country = document.getElementById("country").value;
+        let subject = document.getElementById("subject").value.trim();
+
+        if (firstName === "") {
+            alert("First name is required.");
+            isValid = false;
+        }
+
+        if (lastName === "") {
+            alert("Last name is required.");
+            isValid = false;
+        }
+
+        if (country === "") {
+            alert("Please select a country.");
+            isValid = false;
+        }
+
+        if (subject.length < 10) {
+            alert("Subject must be at least 10 characters long.");
+            isValid = false;
+        }
+
+        if (!isValid) {
+            event.preventDefault();
+        }
     });
 </script>
-<script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    </script>
-    <script>
-        document.querySelectorAll(".nav-link").forEach(link => {
-            link.addEventListener("click", function (e) {
-                e.preventDefault(); 
-                const targetId = this.getAttribute("href");
-                document.querySelector(targetId).scrollIntoView({
-                    behavior: "smooth"
-                });
-            });
-        });
-        </script>
-        
