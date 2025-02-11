@@ -58,7 +58,7 @@
     color: white;
     background: #d67d00; 
     text-decoration: none;
-   
+   cursor: pointer;
     transition: 0.3s ease-in-out;
     width:100%;
     max-width:170px ;
